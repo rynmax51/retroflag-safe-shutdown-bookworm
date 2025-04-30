@@ -36,27 +36,28 @@ It has not been tested on RetroPie, RecalBox, Batocera, or Lakka.
 
 ## Installation
 
-First, make sure you are connected to the internet and SSH (or local terminal) into your Pi.
+Make sure your Raspberry Pi is connected to the internet. Open an SSH session or use a local terminal.
 
-1. Clone this repository:
-```bash
-git clone https://github.com/rynmax51/retroflag-safe-shutdown-bookworm.git
-cd retroflag-safe-shutdown-bookworm
-```
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/rynmax51/retroflag-safe-shutdown-bookworm.git
+   cd retroflag-safe-shutdown-bookworm
+   ```
 
-2. Make the installer executable:
-```bash
-chmod +x retroflag-install.sh
-```
+2. **Run the installer**:
+   ```bash
+   sudo ./retroflag-install.sh
+   ```
 
-3. Run the installer:
-```bash
-sudo ./retroflag-install.sh
-```
+   > 💡 **Note:** If you downloaded the project as a ZIP file instead of cloning it,  
+   > you may need to make the script executable first:  
+   > ```bash
+   > chmod +x retroflag-install.sh
+   > ```
 
-✅ This will:
-- Copy the SafeShutdown script to `/opt/RetroFlag/`
-- Create and enable a systemd service
+✅ This script will:
+- Copy the SafeShutdown Python script to `/opt/RetroFlag/`
+- Create and enable a `systemd` service
 - Start the Safe Shutdown service immediately
 
 ---
