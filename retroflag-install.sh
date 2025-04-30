@@ -24,7 +24,7 @@ fi
 
 # Copy SafeShutdown.py
 echo "Copying SafeShutdown.py..."
-cp /home/pi/SafeShutdown.py "$SCRIPT_PATH"
+cp ./SafeShutdown.py "$SCRIPT_PATH"
 
 # Create systemd service file
 echo "Creating systemd service..."
